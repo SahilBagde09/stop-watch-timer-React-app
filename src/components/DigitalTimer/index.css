@@ -1,0 +1,123 @@
+/* Write your CSS here */
+body {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.bg-container {
+  background-image: linear-gradient(to right, #ffffff, #cffcf1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.timer-controller-container {
+  margin-left: 30px;
+}
+.timer-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  height: 480px;
+  width: 480px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.timer {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+.timer-text {
+  font-family: Roboto;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #00d9f5;
+}
+.timer-status {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: bold;
+  color: #0f172a;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.start-pause-reset-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.start-pause-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.play-pause-reset-image {
+  height: 35px;
+  width: 35px;
+}
+.play-pause-reset-button {
+  font-family: Roboto;
+  color: #1e293b;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+}
+.reset-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+.increment-decrement-control-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.set-timer-limit {
+  font-family: Roboto;
+  color: #1e293b;
+  font-size: 15px;
+}
+.increment-decrement-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.increment-decrement-buttons {
+  border: none;
+  background-color: transparent;
+  font-size: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.timer-limit {
+  background-image: linear-gradient(to right, #4fe3b7, #00d9f5);
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #0f172a;
+  font-family: Roboto;
+}
