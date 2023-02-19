@@ -88,18 +88,6 @@ class DigitalTimer extends Component {
           <div className="timer-controller-container">
             <div className="start-pause-reset-container">
               <div className="start-pause-button-container">
-                <img
-                  src={
-                    isTimerOn
-                      ? 'https://assets.ccbp.in/frontend/react-js/pause-icon-img.png'
-                      : 'https://assets.ccbp.in/frontend/react-js/play-icon-img.png'
-                  }
-                  alt={isTimerOn ? 'pause icon' : 'play icon'}
-                  className="play-pause-reset-image"
-                  onClick={
-                    isTimerOn ? this.onClickPauseTimer : this.onClickStartTimer
-                  }
-                />
                 <button
                   type="button"
                   className="play-pause-reset-button"
@@ -107,20 +95,29 @@ class DigitalTimer extends Component {
                     isTimerOn ? this.onClickPauseTimer : this.onClickStartTimer
                   }
                 >
+                  <img
+                    src={
+                      isTimerOn
+                        ? 'https://assets.ccbp.in/frontend/react-js/pause-icon-img.png'
+                        : 'https://assets.ccbp.in/frontend/react-js/play-icon-img.png'
+                    }
+                    alt={isTimerOn ? 'pause icon' : 'play icon'}
+                    className="play-pause-reset-image"
+                  />
                   {isTimerOn ? 'Pause' : 'Start'}
                 </button>
               </div>
               <div className="reset-button-container">
-                <img
-                  src="https://assets.ccbp.in/frontend/react-js/reset-icon-img.png"
-                  alt="reset icon"
-                  className="play-pause-reset-image"
-                />
                 <button
                   type="button"
                   className="play-pause-reset-button"
                   onClick={this.onClickResetTimer}
                 >
+                  <img
+                    src="https://assets.ccbp.in/frontend/react-js/reset-icon-img.png"
+                    alt="reset icon"
+                    className="play-pause-reset-image"
+                  />
                   Reset
                 </button>
               </div>
@@ -154,3 +151,4 @@ class DigitalTimer extends Component {
 }
 
 export default DigitalTimer
+
