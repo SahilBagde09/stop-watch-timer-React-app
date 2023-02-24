@@ -14,6 +14,7 @@ class DigitalTimer extends Component {
   }
 
   onClickStartTimer = () => {
+    this.changeTimer()
     this.timerId = setInterval(
       (this.seconds = () => {
         this.setState(prevState => ({
@@ -22,16 +23,23 @@ class DigitalTimer extends Component {
             prevState.timerSec === 0
               ? prevState.timerMin - 1
               : prevState.timerMin,
-          isTimerOn: true,
         }))
       }),
       1000,
     )
   }
 
+  changeTimer = () => {
+    this.setState(prevState => ({
+      isTimerOn: !prevState.isTimerOn,
+    }))
+  }
+
   onClickPauseTimer = () => {
     clearInterval(this.timerId)
-    this.setState({isTimerOn: false})
+    this.setState(prevState => ({
+      isTimerOn: !prevState.isTimerOn,
+    }))
   }
 
   onClickResetTimer = () => {
@@ -151,4 +159,5 @@ class DigitalTimer extends Component {
 }
 
 export default DigitalTimer
+
 
